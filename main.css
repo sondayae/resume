@@ -1,0 +1,179 @@
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: #B0D3FC;
+}
+
+html,
+body {
+  word-break: keep-all;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, Bazier Square,
+    Noto Sans KR, Segoe UI, Apple SD Gothic Neo, Roboto, Helvetica Neue, Arial,
+    sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol,
+    Noto Color Emoji;
+  letter-spacing: -0.3px;
+  color: #222222;
+  padding-bottom: 2rem;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media screen and (max-width: 960px) {
+  html,
+  body {
+    font-size: 14px;
+  }
+}
+
+section {
+  padding: 0 2rem;
+}
+
+p {
+  margin: 0 0 1rem 0;
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
+a {
+  color: #0066cc;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 5rem;
+  line-height: 1.1;
+  color: #6e6e73;
+}
+
+@media screen and (max-width: 960px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+h2 {
+  font-size: 3rem;
+  margin: 4rem 0 2rem 0;
+}
+
+h3 {
+  font-size: 2rem;
+  margin: 0 0 1rem 0;
+}
+
+h4 {
+  font-size: 2rem;
+  margin: 0 0 1rem 0;
+}
+
+@media screen and (max-width: 960px) {
+  h4 {
+    font-size: 1.5rem;
+  }
+}
+
+h5 {
+  font-size: 1.3rem;
+  margin: 0 0 0.5rem 0;
+  color: #333333;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+  font-size: 1.1rem;
+}
+
+ul > li {
+  position: relative;
+  padding: 0.2rem 0 0.2rem 1rem;
+}
+
+ul > li:before {
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  content: "•";
+}
+
+.container {
+  width: 100%;
+  max-width: 50rem;
+  margin: auto;
+}
+
+.introduce {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #6e6e73;
+}
+
+@media screen and (max-width: 960px) {
+  .big-paragraph {
+    font-size: 1.5rem;
+  }
+}
+
+.row {
+  display: flex;
+  padding: 3rem 0;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.row-left {
+  flex-basis: 18rem;
+  padding-right: 1rem;
+  flex-shrink: 0;
+}
+
+.row-right {
+  flex-grow: 1;
+}
+
+@media screen and (max-width: 960px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .row-left {
+    flex-basis: 100%;
+    padding-right: 0;
+    padding-bottom: 1rem;
+  }
+}
+
+.other {
+  padding: 3rem 0;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.role {
+  display: block;
+}
+
+.project {
+  padding: 1.5rem 0;
+}
+
+.project:first-child {
+  padding-top: 0;
+}
+
+.time {
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+.accent {
+  color: #000;
+}
